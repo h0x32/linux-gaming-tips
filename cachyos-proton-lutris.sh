@@ -5,7 +5,5 @@
 LUTRIS_WINE_DIR="/home/$USER/.local/share/lutris/runners/wine"
 PROTON_CACHYOS_INSTALL_DIR="/usr/share/steam/compatibilitytools.d"
 
-mkdir -p $LUTRIS_WINE_DIR/{proton-8-cachyos,proton-9-cachyos}
-
-ln -s $PROTON_CACHYOS_INSTALL_DIR/proton-cachyos/files/* $LUTRIS_WINE_DIR/proton-9-cachyos/
-ln -s $PROTON_CACHYOS_INSTALL_DIR/proton-8-cachyos/files/* $LUTRIS_WINE_DIR/proton-8-cachyos/
+ln -s $PROTON_CACHYOS_INSTALL_DIR/proton-cachyos/files $LUTRIS_WINE_DIR/proton-9-cachyos/
+ln -s $PROTON_CACHYOS_INSTALL_DIR/proton-8-cachyos/files $LUTRIS_WINE_DIR/proton-8-cachyos/
